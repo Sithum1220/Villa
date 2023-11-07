@@ -1,0 +1,43 @@
+@media all and (max-width: 475px) {
+    #pic-villa-duleeka {
+        width: 230px;
+    }
+}
+@media all and (max-width: 420px) {
+    #pic-villa-duleeka {
+        width: 200px;
+    }
+}
+
+@media all and (max-width: 375px) {
+    #pic-villa-duleeka {
+        width: 200px;
+    }
+
+    .header-main-div{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media all and (max-width: 320px) {
+    #pic-villa-duleeka {
+        width: 170px;
+        height: 80px;
+    }
+
+    .header-main-div{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media all and (max-width: 275px) {
+    #pic-villa-duleeka {
+        width: 140px;
+        height: 65px;
+    }
+
+    .header-main-div{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Hind:wght@500&family=Josefin+Sans&family=Libre+Baskerville:wght@700&family=Roboto:wght@500&display=swap');
+header > nav >div {
+   background-color: #2b2c30;
+}
+.header-main-div{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.site-map{
+    font-family: 'Hind', sans-serif;
+    /*text-align: center;*/
+    text-transform: uppercase;
+    line-height: 50px;
+    font-weight: 500;
+    font-style: normal;
+    color: #999;
+    font-size: 14px;
+    text-decoration: none;
+}
+#pic-villa-duleeka{
+    background: url("/assest/images/VILLA-DULEEKA01.png");
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 100px;
+}
+.contact-box{
+    background-color: #1b1b1f;
+    height: 80px;
+    width: 200px;
+    border-radius: 8px;
+}
+#contact-num{
+    color: #f9c315;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#contactUS{
+    font-family: 'Hind', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #999;
+    font-size: 20px;
+    text-decoration: none;
+}
