@@ -64,13 +64,11 @@ header > nav > div {
 }
 
 .slider {
-    position: relative;
-    width: 100%;
     background: #2c3e50;
 }
 
 .mySlider {
-    height: 655px;
+    height: 620px;
     display: none;
     overflow: hidden;
 }
@@ -114,18 +112,19 @@ header > nav > div {
     margin: 0 10px;
     cursor: pointer;
 }
-.active, .dot:hover{
-    border-color: #00a7ff; /* blue */
+
+.active, .dot:hover {
+    border-color: #f9c315; /* blue */
 }
 
-.fade {
-    -webkit-animation-name: fade;
+.fades {
+    -webkit-animation-name: fades;
     -webkit-animation-duration: 1.5s;
-    animation-name: fade;
+    animation-name: fades;
     animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fades {
     from {
         opacity: 0.8;
     }
@@ -134,7 +133,7 @@ header > nav > div {
     }
 }
 
-@keyframes fade {
+@keyframes fades {
     from {
         opacity: 0.8;
     }
@@ -148,50 +147,97 @@ header > nav > div {
     color: #ffffff;
     letter-spacing: 2px;
     line-height: 35px;
-    top: 40%;
-    left: 15%;
-    -webkit-animation-name: posi;
-    -webkit-animation-duration: 2s;
-    animation-name: posi;
-    animation-duration: 2s;
+    bottom: 15%;
+    left: 5%;
+    /*-webkit-animation-name: posi;*/
+    /*-webkit-animation-duration: 2s;*/
+    /*animation-name: posi;*/
+    /*animation-duration: s;*/
     z-index: 1;
 }
 
-@-webkit-keyframes posi {
-    from {
-        left: 25%;
-    }
-    to {
-        left: 15%;
-    }
-}
+/*@-webkit-keyframes posi {*/
+/*    from {*/
+/*        top: 25%;*/
+/*    }*/
+/*    to {*/
+/*        bottom: 15%;*/
+/*    }*/
+/*}*/
 
-@keyframes posi {
-    from {
-        left: 25%;
-    }
-    to {
-        left: 15%;
-    }
-}
+/*@keyframes posi {*/
+/*    from {*/
+/*        top: 25%;*/
+/*    }*/
+/*    to {*/
+/*        bottom: 15%;*/
+/*    }*/
+/*}*/
 
 .text h1 {
-    color: #3498db;
+    color: #ffffff;
     font-weight: bold;
     margin-bottom: 20px;
+    font-size: 68px;
 }
 
-.text p {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.mySlider > img {
+.img {
     transform: scale(1.5, 1.5);
     -webkit-animation-name: zoomin;
     animation-duration: 40s;
     animation-name: zoomin;
     -webkit-animation-duration: 40s;
+}
+
+.side-btn > a {
+    border-radius: 0;
+    color: #000;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 20px 60px 20px 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: all 0.5s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1;
+    background: #f9c315;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.side-btn > a::before {
+    background-color: #26282c;
+    content: "";
+    height: 100px;
+    left: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    z-index: -1;
+}
+
+.side-btn > a::after {
+    content: "";
+    font-family: "Font Awesome 5 Pro";
+    font-size: 14px;
+    position: absolute;
+    right: 0px;
+    color: rgb(34, 35, 39);
+    top: 0px;
+    width: 50px;
+    height: 54px;
+    line-height: 54px;
+    background: rgb(221, 169, 2);
 }
 
 @-webkit-keyframes zoomin {
@@ -212,55 +258,82 @@ header > nav > div {
     }
 }
 
-@media screen and (max-width: 800px) {
-    .myslide {
-        height: 500px;
-    }
-
-    .txt {
-        letter-spacing: 2px;
-        line-height: 25px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-animation-name: posi2;
-        -webkit-animation-duration: 2s;
-        animation-name: posi2;
-        animation-duration: 2s;
-    }
-
-    @-webkit-keyframes posi2 {
-        from {
-            top: 35%;
-        }
-        to {
-            top: 50%;
-        }
-    }
-
-
-    @keyframes posi2 {
-        from {
-            top: 35%;
-        }
-        to {
-            top: 50%;
-        }
-    }
-
-    .txt h1 {
-        font-size: 40px;
-    }
-
-    .txt p {
-        font-size: 13px;
-    }
-
+.slider > :nth-child(1) > .img {
+    background: url("/assest/images/IMG_101.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
 }
 
-@media screen and (max-width: 520px){
-    .txt h1{
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
+.slider > :nth-child(2) > .img {
+    background: url("/assest/images/IMG_1072.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.slider > :nth-child(3) > .img {
+    background: url("/assest/images/IMG_1073.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.slider > :nth-child(4) > .img {
+    background: url("/assest/images/IMG_1075.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.slider > :nth-child(5) > .img {
+    background: url("/assest/images/IMG_1076.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.slider > :nth-child(6) > .img {
+    background: url("/assest/images/IMG_1077.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.slider > :nth-child(7) > .img {
+    background: url("/assest/images/IMG_1078.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.slider > :nth-child(8) > .img {
+    background: url("/assest/images/IMG_1081.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.slider > :nth-child(9) > .img {
+    background: url("/assest/images/IMG_1082.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.slider > :nth-child(10) > .img {
+    background: url("/assest/images/IMG_1083.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
 }
